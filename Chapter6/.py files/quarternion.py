@@ -54,7 +54,7 @@ def update(val):
     i = int(t/tstep)
     x,y,z = qrotate(t)
     Cir.set_data_3d(X[0:i], Y[0:i], Z[0:i])
-    Pnt.set_data_3d(x,y,z)
+    Pnt.set_data_3d(X[i:i+1],Y[i:i+1],Z[i:i+1])
     Coord.set_text('Rotated point at '\
                f'({x:.3f}, {y:.3f}, {z:.3f})')
     fig.canvas.draw_idle()
