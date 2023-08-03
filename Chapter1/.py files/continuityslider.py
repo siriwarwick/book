@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
-%matplotlib
 
 def h(xarray):
     y = np.zeros_like(xarray)
