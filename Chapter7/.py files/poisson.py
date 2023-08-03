@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from math import factorial
 
 sims = 500
 
@@ -27,7 +28,7 @@ prob = plt.hist(Tally, bins=bins,
 
 mean = Ndots/(grid**2)
 Poisson =[mean**x*np.exp(-mean)/\
-     np.factorial(int(x)) for x in xbins]
+     factorial(int(x)) for x in xbins]
 
 plt.title(f'Dot count in a {grid}x{grid} grid' 
           f' with {Ndots} dots')
