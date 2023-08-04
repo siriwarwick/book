@@ -4,14 +4,16 @@ from matplotlib.widgets import Slider
 
 nmax = 5 
 pi = np.pi
-x = np.linspace(-2*pi,2*pi,1000)
+x = np.linspace(-2*pi, 2*pi, 1001)
 
 def f(xarray):
     y = np.zeros_like(xarray)
     for ind, x in enumerate(xarray):
         xmod = x%(2*pi)
-        if (xmod<pi and xmod>=0):
+        if (xmod<pi and xmod>0):
             y[ind] = 1
+        if x%pi==0:
+            y[ind]= np.nan
     return y
 
 def Fourier(x,nmax):
@@ -23,7 +25,7 @@ def Fourier(x,nmax):
 fig,ax = plt.subplots()
 plt.subplots_adjust(bottom=0.15)
 
-plt.plot(x, f(x),'r',lw=1)
+plt.plot(x, f(x),'r',lw=1.5)
 Ffunc,= plt.plot(x, Fourier(x,nmax),'b',
         lw=0.5)
 plt.xlim([-2*pi, 2*pi])
