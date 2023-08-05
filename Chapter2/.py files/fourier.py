@@ -16,8 +16,8 @@ def f(xarray):
             y[ind]= np.nan
     return y
 
-def Fourier(x,nmax):
-    S = 0
+def Fourier(x, nmax):
+    S = np.zeros_like(x)
     for n in np.arange(1,nmax+1,2):
         S += np.sin(n*x)/n
     return 0.5+ 2*S/pi 
