@@ -10,9 +10,9 @@ def fn(x,n,a,b):
     return a**n*np.cos(np.pi*x*b**n)
 
 def g(x,a,b):
-    S = 0
+    S = np.zeros_like(x)
     for i in np.arange(0,m_max+1):
-        S += fn(x,i,a,b)
+        S = S + fn(x,i,a,b)
     return S
 
 fig,ax = plt.subplots()
