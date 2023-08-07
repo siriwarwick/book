@@ -10,7 +10,7 @@ def f(xarray):
     y = np.zeros_like(xarray)
     for ind, x in enumerate(xarray):
         xmod = x%(2*pi)
-        if (xmod<pi and xmod>0):
+        if xmod<pi:
             y[ind] = 1
         if x%pi==0:
             y[ind]= np.nan
