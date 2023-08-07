@@ -36,4 +36,4 @@ plt.plot(xbins, Poisson, 'k')
 plt.xticks(xbins)
 plt.xlim([-0.5, Max+0.5])
 plt.grid('on')
-plt.show
+plt.show()
