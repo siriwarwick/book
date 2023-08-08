@@ -31,7 +31,7 @@ Ffunc,= plt.plot(x, Fourier(x,nmax),'b',
 plt.xlim([-2*pi, 2*pi])
 plt.ylim([-0.2, 1.2])
 plt.grid('on')
-plt.title(r'Fourier series up to $n$ terms')
+plt.title(r'Fourier series')
 
 axn = plt.axes([0.15, 0.05, 0.7, 0.03])
 n_slide = Slider(axn, 'n', 1, 101, 
