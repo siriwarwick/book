@@ -18,10 +18,10 @@ for p in pri:
 
 bins = np.linspace(0, 1, Nbins+1)
 
-pri_b, bedge = np.histogram(pri, bins= bins)
+pri_b, _ = np.histogram(pri, bins= bins)
 pri_prob = pri_b/sum(pri_b)
         
-post_b, bedge = np.histogram(post, bins= bins)
+post_b, _ = np.histogram(post, bins= bins)
 post_prob = post_b/sum(post_b)
 
 fig,(ax1, ax2)=plt.subplots(1,2,figsize=(11,4))
