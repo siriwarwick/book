@@ -3,7 +3,7 @@ I'll be grateful for notifications of any errors you spotted in the book. Please
 ## Text errata
 p34: "_Newton-Raphson method is discussed in the exercise 11_": remove "the".<br>
 p97: "_If you'd like to exclude the part r<0 when using Method I_": change to "when using either method"<br>
-p187: "_Relabel the ticks on the axes_" (last line of code annotation). Move this sentence one line up.
+p187: "_Relabel the ticks on the axes_" (last line of code annotation). Move this sentence one line up.<br>
 p223: "_The row of A_": change to "The rows of A". (Kit Liu) <br>
 p355: "_the probabilistic number theory_": remove "the".<br>
 p365: "_On the right of the same figure_": change to "In the same figure,"<br>
