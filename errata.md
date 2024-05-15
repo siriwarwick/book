@@ -7,6 +7,7 @@ p163: Last line of code annotation "_Delay between frames (s)_": change to "Dela
 p187: Last line of code annotation "_Relabel the ticks on the axes_": move this sentence one line up.<br>
 p223: "_The row of A_": change to "The rows of A". (Kit Liu) <br>
 p238: "_join the image points again to find the transformed square_": change to "joins the image points again to produce the transformed square".<br>
+p304: "_left ledge_" (above table 6.2) : change to "left edge".<br>
 p351: Ex 14c(i) "Plot the $\Gamma(x)$": remove "the". Ex 14c(ii) ".. in using the Stirling's": remove "the".<br>
 p355: "_the probabilistic number theory_": remove "the".<br>
 p365: "_On the right of the same figure_": change to "In the same figure,"<br>
