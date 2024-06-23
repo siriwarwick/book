@@ -15,6 +15,7 @@ p423: "can in fact be approximated by $N(\mu_\bar{X}, \sigma_\bar{X})$": change 
 On the same page, "Alternatively, we could use the normal approximation $N(0.5, 0.029)$": change $0.029$ to $0.029^2$.<br>
 p425: "Equivalently,... approaches $N(\mu_\bar{X}, \sigma_\bar{X})$": change $\sigma_\bar{X}$ to $\sigma^2_\bar{X}$". <br>
 p483: Ex 10. The strange symbols "Âč" were meant to be the pound sign £. 
+p486: Last line. Change "affect" to "affects".
 
 ## Code updates
 
