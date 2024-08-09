@@ -11,6 +11,7 @@ p304: "_left ledge_" (above table 6.2) : change to "left edge".<br>
 p351: Ex 14c(i) "Plot the $\Gamma(x)$": remove "the". Ex 14c(ii) ".. in using the Stirling's": remove "the".<br>
 p355: "_the probabilistic number theory_": remove "the".<br>
 p365: "_On the right of the same figure_": change to "In the same figure,"<br>
+p407: Ex 1c: "_a print out the sums_": change to "a print out of the sums". Should also add that the diagonals are going from bottom left to top right. (Perhaps a figure would be helpful.) <br>
 p423: "can in fact be approximated by $N(\mu_\bar{X}, \sigma_\bar{X})$": change $\sigma_\bar{X}$ to $\sigma^2_\bar{X}$ (missing square in the second argument).<br>
 On the same page, "Alternatively, we could use the normal approximation $N(0.5, 0.029)$": change $0.029$ to $0.029^2$.<br>
 p425: "Equivalently,... approaches $N(\mu_\bar{X}, \sigma_\bar{X})$": change $\sigma_\bar{X}$ to $\sigma^2_\bar{X}$". <br>
