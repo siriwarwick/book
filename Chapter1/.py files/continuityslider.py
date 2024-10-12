@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 
-def h(xarray):
+def f(xarray):
     y = np.zeros_like(xarray)
     for ind, x in enumerate(xarray):
         if x==0: 
@@ -12,9 +12,8 @@ def h(xarray):
     return y
 
 xarray = np.linspace(-2, 2,200)
-y = h(xarray)
 x0 = 0
-y0 = h([x0])
+y0 = f([x0])
 eps = 0.1
 
 harray0 = np.full_like(xarray,y0)
@@ -25,9 +24,9 @@ fig,ax = plt.subplots()
 plt.subplots_adjust(bottom=0.2)
 
 plt.ylim(0.5, 1.15)
-plt.plot(xarray, h(xarray) , lw=2)
+plt.plot(xarray, f(xarray) , lw=2)
 
-h0 = plt.plot(xarray, harray0, 'b:') 
+h0, = plt.plot(xarray, harray0, 'b:') 
 hP, = plt.plot(xarray, harrayP, 'r:')
 hM, = plt.plot(xarray, harrayM, 'r:') 
 
