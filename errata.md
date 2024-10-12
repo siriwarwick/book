@@ -18,5 +18,6 @@ p425: "Equivalently,... approaches $N(\mu_\bar{X}, \sigma_\bar{X})$": change $\s
 p483: Ex 10. The strange symbols "Âč" were meant to be the pound sign £. <br>
 p486: Last line. Change "affect" to "affects".
 
-## Code updates
+## Code errata
+p2 (continutyslider.ipynb): The line y = f(xarray) is redundant. Github code now made consistent with the book. (Thanks to 夏威 Xia Wei)
 
