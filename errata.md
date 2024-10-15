@@ -20,6 +20,9 @@ p483: Ex 10. The strange symbols "Âč" were meant to be the pound sign £. <br>
 p486: Last line. Change "affect" to "affects".
 
 ## Code errata
+
+All the following errors have already been corrected in the code on GitHub. They are listed here just for comparison with the book version.<br>
+
 The following were reported by 夏威 Xia Wei.<br>
 
 p2 (continutyslider.ipynb): The line ```y = f(xarray)``` is redundant. <br>
