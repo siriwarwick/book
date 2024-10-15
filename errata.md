@@ -30,11 +30,17 @@ p78 (improper.ipynb): The line which uses Scipy's Simpson's Rule<br>
 will break the code if using Scipy version >1.14. Change this to <br>
 ```integ = simpson(y=f(x1),x=x1) + simpson(y=g(x2),x=x2)```<br>
 
-Slider set_data error: In newer versions of matplotlib, the function set_data only takes list arguments. If you come across an error when using a slider, try putting square brackets around the arguments of set_data. <br>
-p111 for example (curvature.ipynb). Change<br>
+p111 (curvature.ipynb). Change<br>
 ```Pnt1.set_data(rx(t), ry(t))``` to <br>
 ```Pnt1.set_data([rx(t)], [ry(t)])```<br>
 and similarly, change <br>
 ```Pnt2.set_data(t, kappa(t))``` to <br>
 ```Pnt2.set_data([t], [kappa(t)])```<br>
-<br>
+This is because in newer versions of matplotlib, the function set_data only takes list arguments. <br>
+
+p347 (zetaanim.ipynb). For the same reason as p111, change<br>
+   ```dot1.set_data(Dom_r[i], Dom_i[i])```<br>
+  ```dot2.set_data(Img_r[i], Img_i[i])```<br>
+to <br>
+   ```dot1.set_data([Dom_r[i]], [Dom_i[i]])```<br>
+  ```dot2.set_data([Img_r[i]], [Img_i[i]])```<br>
