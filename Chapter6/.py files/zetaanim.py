@@ -38,8 +38,8 @@ ax2.grid('on')
 def animate_frame(i, Dom_r,Dom_i,Img_r,Img_i):
     curve1.set_data(Dom_r[:i], Dom_i[:i])
     curve2.set_data(Img_r[:i], Img_i[:i])
-    dot1.set_data(Dom_r[i], Dom_i[i])
-    dot2.set_data(Img_r[i], Img_i[i])
+    dot1.set_data([Dom_r[i]], [Dom_i[i]])
+    dot2.set_data([Img_r[i]], [Img_i[i]])
     tit1.set_text(text1 % (Dom_r[i],Dom_i[i]))
     tit2.set_text(text2 % (Img_r[i],Img_i[i]))
     return curve1,curve2, dot1,dot2, tit1,tit2
