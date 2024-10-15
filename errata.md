@@ -22,8 +22,8 @@ p486: Last line. Change "affect" to "affects".
 ## Code errata
 p2 (continutyslider.ipynb): The line y = f(xarray) is redundant. Github code now made consistent with the book. (Thanks to 夏威 Xia Wei)<br><br>
 p78 (improper.ipynb): The line which uses Scipy's Simpson's Rule<br>
-&#9;    integ = simpson(f(x1),x1) + simpson(g(x2),x2)<br>
+" "   integ = simpson(f(x1),x1) + simpson(g(x2),x2)<br>
 will break the code if using Scipy version >1.14. Change this to <br>
-&#9;    integ = simpson(y=f(x1),x=x1) + simpson(y=g(x2),x=x2)<br>
+" "    integ = simpson(y=f(x1),x=x1) + simpson(y=g(x2),x=x2)<br>
 (Thanks to 夏威 Xia Wei)<br>
 
