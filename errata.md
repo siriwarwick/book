@@ -3,6 +3,7 @@ I'll be grateful for notifications of any errors you spotted in the book. Please
 ## Text errata
 p34: "_Newton-Raphson method is discussed in the exercise 11_": remove "the".<br>
 p97: "_If you'd like to exclude the part r<0 when using Method I_": change to "when using either method".<br>
+p105: Working with tuples: change "_the code above_" to "the code ellipse.ipynb". (Thanks to 夏威 Xia Wei)<br>
 p163: Last line of code annotation "_Delay between frames (s)_": change to "Delay between frames (ms)".<br>
 p187: Last line of code annotation "_Relabel the ticks on the axes_": move this sentence one line up.<br>
 p223: "_The row of A_": change to "The rows of A". (Kit Liu) <br>
