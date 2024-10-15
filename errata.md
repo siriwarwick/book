@@ -20,10 +20,21 @@ p483: Ex 10. The strange symbols "Âč" were meant to be the pound sign £. <br>
 p486: Last line. Change "affect" to "affects".
 
 ## Code errata
-p2 (continutyslider.ipynb): The line ```y = f(xarray)``` is redundant. Github code now made consistent with the book. (Thanks to 夏威 Xia Wei)<br><br>
+The following were reported by 夏威 Xia Wei.<br>
+
+p2 (continutyslider.ipynb): The line ```y = f(xarray)``` is redundant. <br>
+
+
 p78 (improper.ipynb): The line which uses Scipy's Simpson's Rule<br>
 ```integ = simpson(f(x1),x1) + simpson(g(x2),x2)```<br>
 will break the code if using Scipy version >1.14. Change this to <br>
 ```integ = simpson(y=f(x1),x=x1) + simpson(y=g(x2),x=x2)```<br>
-(Thanks to 夏威 Xia Wei)<br>
 
+Slider set_data error: In newer versions of matplotlib, the function set_data only takes list arguments. If you come across an error when using a slider, try putting square brackets around the arguments of set_data. <br>
+p111 for example (curvature.ipynb). Change<br>
+```Pnt1.set_data(rx(t), ry(t))``` to <br>
+```Pnt1.set_data([rx(t)], [ry(t)])```<br>
+and similarly, change <br>
+```Pnt2.set_data(t, kappa(t))``` to <br>
+```Pnt2.set_data([t], [kappa(t)])```<br>
+<br>
