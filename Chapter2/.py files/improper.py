@@ -19,7 +19,7 @@ for a in alpha:
     x1 = np.linspace(0, a, makeodd(N1))
     x2 = np.linspace(1e-8, 1/a, makeodd(N2))
     
-    integ = simpson(f(x1),x1)+simpson(g(x2),x2)
+    integ = simpson(y=f(x1),x=x1)+simpson(y=g(x2),x=x2)
     err = abs(exact-integ)
     error.append(err)
 
