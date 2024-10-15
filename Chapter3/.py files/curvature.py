@@ -48,9 +48,9 @@ def update(val):
     t = t_slide.val
     T = np.linspace(0,t,200)
     r.set_data(rx(T),ry(T))  
-    Pnt1.set_data(rx(t),ry(t)) 
+    Pnt1.set_data([rx(t)],[ry(t)]) 
     kap.set_data(T, kappa(T))  
-    Pnt2.set_data(t,kappa(t)) 
+    Pnt2.set_data([t],[kappa(t)]) 
     fig.canvas.draw_idle()
 
 t_slide.on_changed(update)
