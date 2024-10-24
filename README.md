@@ -2,7 +2,7 @@ This is the GitHub homepage for my book:
 
 **Exploring University Mathematics with Python** by Siri Chongchitnan (Springer, 2023).
 
-Please use the discussion section to post queries. Errata since publication are collected in errata.md
+Errata since publication are collected in errata.md
 
 ### Using the code
 
