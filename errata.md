@@ -52,3 +52,7 @@ p347 (zetaanim.ipynb). For the same reason as p111, change<br>
 to <br>
    ```dot1.set_data([Dom_r[i]], [Dom_i[i]])```<br>
   ```dot2.set_data([Img_r[i]], [Img_i[i]])```<br>
+
+p331 (legendre.ipynb). <br>
+Compatibility fix for Numpy 2+ in lines 4 and 12 of code. <br>
+Thanks to Finn Marchetti.<br>
