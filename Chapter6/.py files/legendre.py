@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sympy import sieve
-from sympy.ntheory import legendre_symbol
+from sympy.functions.combinatorial.numbers import legendre_symbol
 
 Pmax = 85
 L = list(sieve.primerange(3,Pmax))
                 
 f = lambda i,j: legendre_symbol(L[i], L[j])
 
-array = np.fromfunction(np.vectorize(f),
+array = np.fromfunction(np.vectorize(f, otypes=[int]),
             (len(L),len(L)), dtype=int)
 
 array = np.vstack((L, array))
